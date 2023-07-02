@@ -8,5 +8,11 @@ pipeline {
       }
     }
 
+    stage('Unit Testing') {
+      steps {
+        sh './mvnw test'
+      }
+    }
+
   }
 }
